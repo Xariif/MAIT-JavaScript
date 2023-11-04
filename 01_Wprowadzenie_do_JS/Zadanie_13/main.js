@@ -1,6 +1,7 @@
 function getEvenAverage(array) {
 	const evenNumbers = array.filter((num) => num % 2 === 0);
-	const sum = evenNumbers.reduce((acc, curr) => acc + curr, 0);
+
+	const sum = evenNumbers.reduce((total, curr) => total + curr, 0);
 	return sum === 0 ? null : sum / evenNumbers.length;
 }
 
